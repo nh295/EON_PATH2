@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<aggregation>
+	<stakeholder> <id>WEA</id> <weight> 0.5 </weight>	<description> Weather </description>
+		<objective> <id>WEA1</id> <weight> 1/3 </weight> <description> Global NWP </description>
+			<subobjective> <id>WEA1-1</id> <weight> 1/6 </weight>	<description> Temperature </description> </subobjective>
+			<subobjective> <id>WEA1-2</id> <weight> 1/6 </weight>	<description> Humidity </description> </subobjective>
+			<subobjective> <id>WEA1-3</id> <weight> 1/6 </weight>	<description> Pressure at surface </description> </subobjective>
+			<subobjective> <id>WEA1-4</id> <weight> 1/6 </weight>	<description> Wind </description> </subobjective>
+			<subobjective> <id>WEA1-5</id> <weight> 1/6 </weight>	<description> Cloud </description> </subobjective>
+			<subobjective> <id>WEA1-6</id> <weight> 1/6 </weight>	<description> Precipitation at surface </description> </subobjective>
+		</objective>
+		<objective> <id>WEA2</id> <weight> 1/3 </weight> <description> Regional NWP </description>
+			<subobjective> <id>WEA2-1</id> <weight> 1/6 </weight>	<description> Temperature </description> </subobjective>
+			<subobjective> <id>WEA2-2</id> <weight> 1/6 </weight>	<description> Humidity </description> </subobjective>
+			<subobjective> <id>WEA2-3</id> <weight> 1/6 </weight>	<description> Pressure at surface </description> </subobjective>
+			<subobjective> <id>WEA2-4</id> <weight> 1/6 </weight>	<description> Wind </description> </subobjective> 
+			<subobjective> <id>WEA2-5</id> <weight> 1/6 </weight>	<description> Cloud </description> </subobjective>
+			<subobjective> <id>WEA2-6</id> <weight> 1/6 </weight>	<description> Precipitation at surface </description> </subobjective>
+		</objective>
+		<objective> <id>WEA3</id> <weight> 1/3 </weight> <description> Nowcasting </description>
+			<subobjective> <id>WEA3-1</id> <weight> 1/4 </weight>	<description> Temperature </description> </subobjective>
+			<subobjective> <id>WEA3-2</id> <weight> 1/4 </weight>	<description> Humidity </description> </subobjective>
+			<subobjective> <id>WEA3-3</id> <weight> 1/4 </weight>	<description> Wind </description> </subobjective>
+			<subobjective> <id>WEA3-4</id> <weight> 1/4 </weight>	<description> Precipitation at surface </description> </subobjective>
+		</objective>
+	</stakeholder>
+	<stakeholder> <id>CLI</id> <weight> 0.2 </weight>	<description> Climate </description>
+		<objective> <id>CLI1</id> <weight> 1/2 </weight> <description> Climate Modelling </description>
+			<subobjective> <id>CLI1-1</id> <weight> 1/3 </weight>	<description> Temperature </description> </subobjective>
+			<subobjective> <id>CLI1-2</id> <weight> 1/3 </weight>	<description> Humidity </description> </subobjective>
+			<subobjective> <id>CLI1-3</id> <weight> 1/3 </weight>	<description> Wind </description> </subobjective>
+		</objective>
+		<objective> <id>CLI2</id> <weight> 1/2 </weight> <description> Climate Monitoring </description>
+			<subobjective> <id>CLI2-1</id> <weight> 1/6 </weight>	<description> Temperature </description> </subobjective>
+			<subobjective> <id>CLI2-2</id> <weight> 1/6 </weight>	<description> Humidity </description> </subobjective>
+			<subobjective> <id>CLI2-3</id> <weight> 1/6 </weight>	<description> Pressure at surface </description> </subobjective>
+			<subobjective> <id>CLI2-4</id> <weight> 1/6 </weight>	<description> Wind </description> </subobjective>
+			<subobjective> <id>CLI2-5</id> <weight> 1/6 </weight>	<description> Cloud </description> </subobjective>
+			<subobjective> <id>CLI2-6</id> <weight> 1/6 </weight>	<description> Precipitation at surface </description> </subobjective>
+		</objective>
+	</stakeholder>
+	<stakeholder> <id>AERO</id> <weight> 0.1 </weight>	<description> Aviation </description>
+		<objective> <id>AERO1</id> <weight> 1/2 </weight> <description> Airspace Meteorology Modelling </description>
+			<subobjective> <id>AERO1-1</id> <weight> 1/5 </weight> <description> Atmospheric Temperature </description> </subobjective>
+			<subobjective> <id>AERO1-2</id> <weight> 1/5 </weight> <description> Atmospheric Humidity </description> </subobjective>
+			<subobjective> <id>AERO1-3</id> <weight> 1/5 </weight> <description> Atmospheric Wind </description> </subobjective>
+			<subobjective> <id>AERO1-4</id> <weight> 1/5 </weight> <description> Cloud </description> </subobjective>
+			<subobjective> <id>AERO1-5</id> <weight> 1/5 </weight> <description> Atmospheric precipitation </description> </subobjective>
+		</objective>
+		<objective> <id>AERO2</id> <weight> 1/2 </weight> <description> Airport Ground </description>
+			<subobjective> <id>AERO2-1</id> <weight> 1/5 </weight> <description> Temperature at surface </description> </subobjective>
+			<subobjective> <id>AERO2-2</id> <weight> 1/5 </weight> <description> Humidity at surface</description> </subobjective>
+			<subobjective> <id>AERO2-3</id> <weight> 1/5 </weight> <description> Pressure at surface </description> </subobjective>
+			<subobjective> <id>AERO2-4</id> <weight> 1/5 </weight> <description> Wind at surface</description> </subobjective> 
+			<subobjective> <id>AERO2-5</id> <weight> 1/5 </weight> <description> Precipitation at surface </description> </subobjective>
+		</objective>
+	</stakeholder>
+	<stakeholder> <id>AGRO</id> <weight> 0.1 </weight>	<description> Agriculture </description>
+		<objective> <id>AGRO1</id> <weight> 1 </weight> <description> Agricultural Meteorology </description>
+			<subobjective> <id>AGRO1-1</id> <weight> 1/5 </weight> <description> Temperature at surface </description> </subobjective>
+			<subobjective> <id>AGRO1-2</id> <weight> 1/5 </weight> <description> Temperature low atmosphere </description> </subobjective>
+			<subobjective> <id>AGRO1-3</id> <weight> 1/5 </weight> <description> Humidity at surface</description> </subobjective>
+			<subobjective> <id>AGRO1-4</id> <weight> 1/5 </weight> <description> Wind at surface</description> </subobjective>
+			<subobjective> <id>AGRO1-5</id> <weight> 1/5 </weight> <description> Precipitation at surface </description> </subobjective>
+		</objective>
+	</stakeholder>
+	<stakeholder> <id>DIS</id> <weight> 0.1 </weight> <description> Disaster Monitoring </description>
+		<objective> <id>DIS1</id> <weight> 1 </weight> <description> Disaster Monitoring </description>
+			<subobjective> <id>DIS1-1</id> <weight> 1 </weight><description> Tropical storms and hurricanes </description> </subobjective>
+		</objective>
+	</stakeholder>
+</aggregation>

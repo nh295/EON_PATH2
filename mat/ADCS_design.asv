@@ -1,0 +1,27 @@
+function design = ADCS_design(reqs)
+%% Disturbance torques
+Iy          = reqs.Iyy;
+Iz          = reqs.Izz;
+h           = reqs.Altitude;
+theta       = reqs.MaxPointing;
+As          = reqs.SurfaceArea;
+q           = reqs.Reflectance;
+i           = reqs.MaxSolarAngle;
+cps_cg      = reqs.OffsetCPsolar;
+cpa_cg      = reqs.OffsetCPaero;
+D           = reqs.ResidualDipole;
+Cd          = reqs.DragCoefficient;
+V           = reqs.Velocity;
+rho         = reqs.Density;
+
+%% Call internal functions
+R = 1000*(RE+h);
+[Tg] = GGDisturbanceTorque (Iy, Iz, R, theta);
+[Ta] = AeroDisturbanceTorque (Cd,As,1000*V,rho,cpa_cg);
+[Tsp] = SPDisturbanceTorque (As, q, i, cps_cg);
+[Tm] = MFDisturbanceTorque (D,R);
+Tsp = Tsp.*ones(size(Tg));
+T = [Tg;Tsp;Tm;Ta];
+Tmax = max(T);
+
+end

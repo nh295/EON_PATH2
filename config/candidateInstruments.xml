@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<candidateInstruments>
+	<instrument>
+		<name>PATH_GEOSTAR</name>
+		<size>100.0</size><!-- in U-->
+		<cost>100</cost><!-- in $M-->
+		<mass>250</mass><!-- in kg-->
+		<field-of-view>50</field-of-view><!-- in deg -->
+		<num-of-mmwave-band-channels>128</num-of-mmwave-band-channels>
+		<measurements>
+			<measurement><parameter>1.2.1 Atmospheric temperature</parameter><horizontal-spatial-resolution>50e3</horizontal-spatial-resolution><vertical-spatial-resolution>2e3</vertical-spatial-resolution><accuracy>2</accuracy><temporal-resolution>0.17</temporal-resolution></measurement>
+			<measurement><parameter>1.2.2 Air temperature at surface</parameter><horizontal-spatial-resolution>50e3</horizontal-spatial-resolution><accuracy>2</accuracy><temporal-resolution>0.17</temporal-resolution></measurement>
+			<measurement><parameter>1.3.1 Atmospheric humidity</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><vertical-spatial-resolution>2e3</vertical-spatial-resolution><accuracy>0.25</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.3.4 Atmospheric pressure</parameter><horizontal-spatial-resolution>50e3</horizontal-spatial-resolution><vertical-spatial-resolution>2e3</vertical-spatial-resolution><accuracy>0.9</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.3.5 Air humidity at surface</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><accuracy>0.25</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.3.6 Air pressure at surface</parameter><horizontal-spatial-resolution>50e3</horizontal-spatial-resolution><accuracy>0.9</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.4.1 atmospheric wind speed</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><vertical-spatial-resolution>2e3</vertical-spatial-resolution><accuracy>2.5</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.4.3 Air wind at surface</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><accuracy>2.5</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.7.1 Cloud liquid water</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><vertical-spatial-resolution>2e3</vertical-spatial-resolution><accuracy>0.2</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.7.3 Precipitation rate</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><vertical-spatial-resolution>2e3</vertical-spatial-resolution><accuracy>1.4</accuracy><temporal-resolution>0.33</temporal-resolution></measurement>
+			<measurement><parameter>1.7.4 Precipitation rate at surface</parameter><horizontal-spatial-resolution>25e3</horizontal-spatial-resolution><accuracy>1.4</accuracy><temporal-resolution>0.17</temporal-resolution></measurement>
+			<measurement><parameter>1.7.5 Tropical storms and hurricanes</parameter></measurement>
+		</measurements>
+	</instrument>
+	<instrument>
+		<name>EON_BASE</name>
+		<size>0.5</size><!-- in U-->
+		<cost>1</cost><!-- in $M-->
+		<mass>1</mass><!-- in kg-->
+		<field-of-view>50</field-of-view><!-- in deg -->
+		<num-of-mmwave-band-channels>0</num-of-mmwave-band-channels>
+		<aperture-azimuth>0.069</aperture-azimuth>
+	</instrument>
+	<instrument>
+		<name>EON_50_1</name>
+		<size>0.5</size><!-- in U-->
+		<cost>1</cost><!-- in $M-->
+		<mass>1</mass><!-- in kg-->
+		<field-of-view>50</field-of-view><!-- in deg -->
+		<num-of-mmwave-band-channels>64</num-of-mmwave-band-channels>
+		<frequency>50e9</frequency>
+		<measurements>
+			<measurement><parameter>1.2.1 Atmospheric temperature</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>2</accuracy></measurement>
+			<measurement><parameter>1.2.2 Air temperature at surface</parameter> <accuracy>2</accuracy></measurement>
+			<measurement><parameter>1.4.1 atmospheric wind speed</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>2.5</accuracy></measurement>
+			<measurement><parameter>1.4.3 Air wind at surface</parameter><accuracy>2.5</accuracy></measurement>
+		</measurements>
+	</instrument>
+	<instrument>
+		<name>EON_118_1</name>
+		<size>0.5</size><!-- in U-->
+		<cost>1</cost><!-- in $M-->
+		<mass>1</mass><!-- in kg-->
+		<field-of-view>50</field-of-view><!-- in deg -->
+		<num-of-mmwave-band-channels>64</num-of-mmwave-band-channels>
+		<frequency>118e9</frequency>
+		<measurements>
+			<measurement><parameter>1.2.1 Atmospheric temperature</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>2</accuracy></measurement>
+			<measurement><parameter>1.2.2 Air temperature at surface</parameter> <accuracy>2</accuracy></measurement>
+			<measurement><parameter>1.4.1 atmospheric wind speed</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>2.5</accuracy></measurement>
+			<measurement><parameter>1.4.3 Air wind at surface</parameter><accuracy>2.5</accuracy></measurement>
+		</measurements>
+	</instrument>
+	<instrument>
+		<name>EON_183_1</name>
+		<size>0.5</size><!-- in U-->
+		<cost>1</cost><!-- in $M-->
+		<mass>1</mass><!-- in kg-->
+		<field-of-view>50</field-of-view><!-- in deg -->
+		<num-of-mmwave-band-channels>64</num-of-mmwave-band-channels>
+		<frequency>183e9</frequency>
+		<measurements>
+			<measurement><parameter>1.3.1 Atmospheric humidity</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>0.25</accuracy></measurement>
+			<measurement><parameter>1.3.5 Air humidity at surface</parameter><accuracy>0.25</accuracy></measurement>
+			<measurement><parameter>1.4.1 atmospheric wind speed</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>2.5</accuracy></measurement>
+			<measurement><parameter>1.4.3 Air wind at surface</parameter><accuracy>2.5</accuracy></measurement>
+			<measurement><parameter>1.7.1 Cloud liquid water</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>0.2</accuracy></measurement>
+			<measurement><parameter>1.7.3 Precipitation rate</parameter><vertical-spatial-resolution>3e3</vertical-spatial-resolution><accuracy>1.4</accuracy></measurement>
+			<measurement><parameter>1.7.4 Precipitation rate at surface</parameter><accuracy>1.4</accuracy></measurement>
+			<measurement><parameter>1.7.5 Tropical storms and hurricanes</parameter></measurement>
+		</measurements>
+	</instrument>
+	<instrument>
+		<name>EON_ATMS_1</name>
+		<size>2.0</size><!-- in U-->
+		<cost>2</cost><!-- in $M-->
+		<mass>1</mass><!-- in kg-->
+		<field-of-view>50</field-of-view> <!-- in deg -->
+		<num-of-mmwave-band-channels>64</num-of-mmwave-band-channels>
+		<frequency>50e9</frequency>
+	</instrument>
+</candidateInstruments>

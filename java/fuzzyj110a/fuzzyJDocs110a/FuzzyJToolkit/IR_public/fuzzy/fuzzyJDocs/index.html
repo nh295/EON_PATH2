@@ -1,0 +1,185 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./index_files/filelist.xml">
+<link rel=Edit-Time-Data href="./index_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>NRC FuzzyJ Toolkit</title>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:script;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta name=Template content="C:\Program Files\Microsoft Office\Office\html.dot">
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='margin-left:.5in;text-align:center'><span
+style='font-family:"Comic Sans MS"'>NRC FuzzyJ Toolkit</span> <span
+style='font-family:"Comic Sans MS"'>for the Java(tm) Platform</span> </h2>
+
+<h2 align=center style='text-align:center'><span style='font-family:"Comic Sans MS"'>User's
+Guide<o:p></o:p></span></h2>
+
+<h3 align=center style='text-align:center'><span style='font-family:"Comic Sans MS"'>Version
+1.10a<o:p></o:p></span></h3>
+
+<p align=center style='text-align:center'><a
+href="http://iit-iti.nrc-cnrc.gc.ca/about-sujet/ir-ri_e.html">Integrated
+Reasoning</a> <br>
+<a href="http://iit-iti.nrc-cnrc.gc.ca/">Institute for Information Technology</a>
+<br>
+<a href="http://www.nrc-cnrc.gc.ca/">National Research Council Canada</a> <br>
+R. Orchard <br>
+September 2006</p>
+
+<p align=center style='text-align:center'><b><span style='font-size:13.5pt'>Abstract</span></b>
+</p>
+
+<p class=MsoNormal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:.5in'>The NRC FuzzyJ Toolkit is a Java(tm) API for
+representing and manipulating fuzzy information. The toolkit consists of a set
+of classes (nrc.fuzzy.*) that allow a user to build fuzzy systems in Java as
+well as a supplementary set of classes (nrc.fuzzy.jess.*) that include some
+Jess UserFunctions to provide an integration with <a
+href="http://herzberg.ca.sandia.gov/jess/">Jess</a>, the Expert System Shell
+from Sandia National Laboratories.</p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=4 width="100%" align=center>
+
+</div>
+
+
+<h3 align=center style='text-align:center'>Table of Contents</h3>
+
+<p><a href="introduction.html">Introduction</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Brief description of the NRC FuzzyJ
+Toolkit. <br>
+<a href="legal.html">Legal Stuff</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Who can use it and responsibilities.
+<br>
+<a href="installation.html">Getting the Toolkit and Installing it</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to obtain and install the
+package. <br>
+<a href="overview.html">Overview of Fuzzy Concepts and Fuzzy Rules</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Brief introduction to fuzzy concepts
+such as imprecision, fuzzy sets, etc. <br>
+<a href="FuzzyVariable.html">Fuzzy Variables</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Defining a fuzzy variable with its
+language for describing fuzzy concepts of the variable. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (e.g. Temperature) <br>
+<a href="FuzzySet.html">Fuzzy Sets</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Physical representation of fuzzy
+membership in a set. <br>
+<a href="FuzzyValue.html">Fuzzy Values</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Specific instances of a fuzzy
+concept for a Fuzzy Variable. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (e.g. Temperature is very hot) <br>
+<a href="FuzzyModifier.html">Fuzzy Modifiers</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extending the language used to
+describe fuzzy concepts. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (e.g. very, slightly, above, ...) <br>
+<a href="FuzzyRule.html">Fuzzy Rules</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simple fuzzy rules can be created in
+Java <br>
+<a href="CertaintyFactors.html">Certainty Factors</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some techniques to introduce a
+limited certainty factor capability using existing class methods <br>
+<a href="FuzzyJess.html">FuzzyJess</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integration with the rule based
+expert system shell, Jess <br>
+<a href="APIdocs\index.html">The FuzzyJ Toolkit API</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Details of the classes, methods,
+etc. that make up the toolkit <br>
+<a href="newFeatures.html">New Features, Changes and Helpful Hints</a> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Describes extensions and changes in
+new versions and provides a few programming hints<br>
+<a href="references.html">References</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some places to get further
+information </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><br>
+<span style='font-size:10.0pt'>Java and all Java based marks are trademarks or
+registered trademarks of Sun Microsystems, Inc. in the United States and other
+countries.</span> </p>
+
+</div>
+
+</body>
+
+</html>

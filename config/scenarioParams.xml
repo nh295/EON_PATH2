@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<scenarioParams>
+	<name> test </name>
+
+	<!-- time horizon is the duration of the mission-->
+	<timeHorizon> 3 </timeHorizon>
+
+</scenarioParams>
